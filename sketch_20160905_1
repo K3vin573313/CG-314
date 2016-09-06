@@ -1,0 +1,21 @@
+void setup() {
+  //slow frame rate from 60 to 40
+  frameRate(40);
+  //cyan bg, establish size, and initialize anti-aliased edges
+  background(0,255,255);
+  size (640,480);
+  smooth();
+}
+void draw(){
+if (mousePressed) {
+  // create yellow arc when mouse pressed and a white square when not pressed down
+    fill(255,255,0);
+    //rect(mouseX-37.5,mouseY-37.5,75,75);
+    arc (mouseX,mouseY,60,60,0,radians(225));
+  }   
+    else {
+        fill (255); 
+         rect(mouseX-30,mouseY-30,60,60);  }
+    //arc (mouseX,mouseY,60,60,0,HALF_PI);
+ 
+}
