@@ -1,0 +1,4 @@
+size (640,480);
+smooth();
+\\always make sure to create larger second end
+  arc(320,240, 80,80,radians(45),radians(320));
