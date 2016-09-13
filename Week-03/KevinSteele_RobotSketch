@@ -1,3 +1,4 @@
+ //establish variables
  int x = 60;
  int y = 80;
 
@@ -7,24 +8,33 @@
  }
  
   void draw () {
+  // make black main body
     fill (0);
-   rect (2*y,3*x,3*x,2*y); 
+   rect (2*y,3*x,3*x,2*y);
+   
+   //create left outer eyeball shape, white of eyes, and pupil
    fill(0);
    ellipse (2*y,3*x,y,y);
    fill(0);
    ellipse((2*y+3*x),3*x,y,y);
    fill(255);
    ellipse ((2*y+3*x),3*x,y*2/3,y*2/3);
+   
+    //create right outer eyeball shape, white of eyes, and pupil
    fill(0);
    ellipse ((2*y+3*x),3*x,y/4,y/4);
    fill(255);
    ellipse (2*y,3*x,y*2/3,y*2/3);
    fill(0);
    ellipse (2*y,3*x,y/4,y/4);
+   
+   //create teeth
    fill(255);
    rect(3*x, 3*y, x,y);
    fill(255);
    rect((4*x+x/3), 3*y, x,y);
+   
+   //make stumpy legs
    fill (0);
    quad(3*x, 4*y,3*x,5*y,4*x,5*y,4*x,4*y);
    fill (0);
