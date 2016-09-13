@@ -1,0 +1,32 @@
+ int x = 60;
+ int y = 80;
+
+  void setup(){
+   size (640,480);
+   background(250);
+ }
+ 
+  void draw () {
+    fill (0);
+   rect (2*y,3*x,3*x,2*y); 
+   fill(0);
+   ellipse (2*y,3*x,y,y);
+   fill(0);
+   ellipse((2*y+3*x),3*x,y,y);
+   fill(255);
+   ellipse ((2*y+3*x),3*x,y*2/3,y*2/3);
+   fill(0);
+   ellipse ((2*y+3*x),3*x,y/4,y/4);
+   fill(255);
+   ellipse (2*y,3*x,y*2/3,y*2/3);
+   fill(0);
+   ellipse (2*y,3*x,y/4,y/4);
+   fill(255);
+   rect(3*x, 3*y, x,y);
+   fill(255);
+   rect((4*x+x/3), 3*y, x,y);
+   fill (0);
+   quad(3*x, 4*y,3*x,5*y,4*x,5*y,4*x,4*y);
+   fill (0);
+   quad(3*x+y, 4*y,3*x+y,5*y,4*x+y,5*y,4*x+y,4*y);
+  }
