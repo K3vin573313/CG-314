@@ -75,11 +75,7 @@ void draw () {
     x = x +xDirection;
     y = y + yDirection;
   }
-  //else if (mousePressed && mouseButton !=LEFT)
-  //{
-  //  x = width/2;
-  //  y = height/2.5;
-  //}
+ 
   else
   {
     xDirection = xCurrent;
