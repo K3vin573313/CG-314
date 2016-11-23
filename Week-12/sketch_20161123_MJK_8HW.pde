@@ -1,4 +1,5 @@
-
+//By Kevin, Mitchell, and Jesse
+//A humble 3D environment where a cube is inside of a sphere made of triangles 
 
 float x, y, z;
 float rotation = PI/48;
@@ -42,6 +43,8 @@ void draw() {
   //  direction =-direction;
   //}
   //z+=direction;
+  
+//*Press UP/DOWN, Left/Right buttons to pan and zoom camera and use the mouse to effect rotation
 
   if (keyPressed ) { 
     if (key ==CODED) {
